@@ -5,7 +5,7 @@
 Z80 CP/M-style emulator on ESP32 using FabGL for VGA output and PS/2 keyboard
 input, with an SD card disk backend for A:/B: drives.
 
-There is exactly one active boot path (see `setup()`/`loop()` in
+There is one active boot path (see `setup()`/`loop()` in
 ESP_FABGL.ino and `Cpm22Machine` in cpm22_machine.h):
 
 - Z80 CPU execution is real (FabGL `emudevs/Z80`).
