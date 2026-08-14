@@ -22,8 +22,7 @@ ESP_FABGL.ino and `Cpm22Machine` in cpm22_machine.h):
   `Cpm22Machine::bootFromSd()` loads it at cold boot, and
   `reloadWarmBootImage()` reloads it from SD again on every warm boot
   (BDOS function 0), on program exit (after `RUN`), and whenever the Z80
-  jumps to address 0000h. There is no flash-embedded copy and no host-side
-  C++ fallback CCP anymore, so there is nothing else to keep in sync.
+  jumps to address 0000h. 
 - If SD/`MINICCP.COM` is unavailable, PC stays at 0000h and the same warm-boot
   trap keeps retrying automatically (rate-limited logging) until it succeeds.
 
